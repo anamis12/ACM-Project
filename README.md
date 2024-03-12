@@ -122,14 +122,18 @@ example-
 
     -With strings we can implement 3 new Builtins- print , load and error.
      Example:
-        ```st1
-        print "Hello World!"
-        ```
-     Output:"Hello World!"
-        ```st2
-        error "This is an error"
-        ```
-      Output:Error: This is an error
+  ```st1
+  print "Hello World!"
+  ```
+
+   Output:"Hello World!"
+
+  ```st2
+  error "This is an error"
+  ```
+   
+  Output:Error: This is an error
+
     ```st3
     load hello.lspy
     ```
