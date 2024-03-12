@@ -37,5 +37,60 @@ This is a programming language inspired by Lisp, implemented using the C program
    ```ok1
    ./parsing
 
-#Features
+   ```
+
+## Format
+### S-expressions
+- S-expressions are enclosed within parentheses.()
+- The first element in an S-expression is typically a function or operator, followed by its arguments.
+    example-
+   ```s
+   (+ 10 (* 5 3))
+  ````
+
+ ### Q-expressions
+- Q-expressions are enclosed within parentheses.{}
+- The first element in an Q-expression is typically a macro or operator, followed by its arguments.
+    example-
+   ```q
+    eval {head (list 1 2 3 4)}
+  ````
+  Tail and Join macros are also available.
+
+ ### Variables
+- Variables are defined using the def keyword,aruguments placed in {} and values beside them.
+example-
+   ```v
+      def {a b} 2 3 
+  ````
+- A list can also be declared as follows
     
+   ```vl
+   def {arglist} {a b x y}
+   def arglist 1 2 3 4
+   list a b x y
+  ```
+   ### Functions
+   - We can call the function by putting it as the first argument in a normal S-Expression.
+  Example-
+   ```f
+      (\ {x y} {+ x y}) 10 20
+  ```
+
+  - If we want to name this function we can pass it to our existing builtin def , Then we can call it by refering to it by name.
+  Example-
+   ```f1
+     def {add-together} (\ {x y} {+ x y})
+    add-together 10 20
+   ```
+  - This Language also supports partial evaluation.Example-
+   ```f2
+      def {add-mul} (\ {x y} {+ x (* x y)})
+      add-mul 10 20
+      def {add-mul-ten} (add-mul 10)
+      add-mul-ten 50
+   ```
+     ### Conditionals
+      
+  
+
