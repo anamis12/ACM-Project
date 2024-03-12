@@ -10,18 +10,32 @@ This is a programming language inspired by Lisp, implemented using the C program
 
 ## Installation
  ### Prerequisites
-    - C Compiler (e.g., GCC)
+    C Compiler (e.g., GCC)
 
 - You have to copy the files mpc.c and mpc.h from the [MPC GITHUB REPO](https://github.com/orangeduck/mpc) 
 - Clone the github repository of the Programing Language.
 - Save the files mpc.c and mpc.h in the same directory as the source file.
 
 ## Usage
-  -compile the code using the command:
-    -cc -std=c99 -Wall parsing.c mpc.c -ledit -lm -o parsing   
-    for  Linux and Mac
-    - cc -std=c99 -Wall parsing.c mpc.c -o parsing
-     for Windows
+  
+  compile the code using the command:for  Linux and Mac
+   ```ok
+    cc -std=c99 -Wall parsing.c mpc.c -ledit -lm -o parsing
+   ```
 
-  -Then run the code by using
-   -./parsing
+ for Windows
+
+    
+   
+    cc -std=c99 -Wall parsing.c mpc.c -o parsing
+  
+    
+    
+
+  Then run the code by using
+
+   ```ok1
+   ./parsing
+
+#Features
+    
