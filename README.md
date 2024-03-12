@@ -91,6 +91,50 @@ example-
       add-mul-ten 50
    ```
      ### Conditionals
-      
-  
+     - We check conditions using operators such as < = ,== etc.
+       Example:
+        ```c
+         == 5 6
+        ```
+   - Ternary operator can also be implemented
+   
+   ```c1
+   def {x y} 100 200
+   if (== x y) {+ x y} {- x y}
+   ```
 
+   - using functions and conditionals , recursive functions can also be written.
+  Example
+   ```fc
+   (fun {len l} {
+   if (== l {})
+    {0}
+    {+ 1 (len (tail l))}
+    })
+   ```
+     ### Strings
+     - Our programming language can also handle strings.
+       Example:
+        ```st
+         eval (head {"hello" "world"})
+        ```
+     Output:"hello"
+
+    -With strings we can implement 3 new Builtins- print , load and error.
+     Example:
+        ```st1
+        print "Hello World!"
+        ```
+     Output:"Hello World!"
+        ```st2
+        error "This is an error"
+        ```
+      Output:Error: This is an error
+    ```st3
+    load hello.lspy
+    ```
+   load-prints out the information in a file
+  ### Comments
+     -comments start with ; and end at the end of the line.
+
+ 
